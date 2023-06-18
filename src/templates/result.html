@@ -1,0 +1,19 @@
+<title>sukekiyo Predict App</title>
+{% if Name  == '青沼静馬' %}
+    <h1>帰ってきたのはスケキヨではありません！</h1>
+    <h1>財産目当ての {{ Name }} に違いない！</h1>
+    <div>
+        <img src=".\static\images\fukidashi.jpg"><br>
+        <img src="{{ image }}">
+    </div>
+    <a href="./">トップへ戻る</a>
+{% elif Name == 'スケキヨ' %}
+    <h1>おかえり！スケキヨ！</h1>
+    <h1>帰ってきたのは {{ Name }} です</h1>
+    <div>
+        <img src="{{ image }}">
+    </div>
+    <a href="./">トップへ戻る</a>
+{% else %}
+    <a href="./">トップへ戻る</a>
+{% endif %}
